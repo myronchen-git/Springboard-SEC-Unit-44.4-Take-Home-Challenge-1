@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AdminPage > matches snapshot. 1`] = `
+<DocumentFragment>
+  <table
+    class="table table-striped"
+  >
+    <thead>
+      <tr>
+        <th>
+          ID
+        </th>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          State
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          1
+        </td>
+        <td>
+          First Name 1
+        </td>
+        <td>
+          Last Name 1
+        </td>
+        <td>
+          email1@email.com
+        </td>
+        <td />
+      </tr>
+      <tr>
+        <td>
+          2
+        </td>
+        <td>
+          First Name 2
+        </td>
+        <td>
+          Last Name 2
+        </td>
+        <td>
+          email2@email.com
+        </td>
+        <td />
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
