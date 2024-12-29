@@ -5,6 +5,12 @@ exports[`SignupPage > matches snapshot. 1`] = `
   <main
     class="Signup"
   >
+    <title>
+      Yodlr Registration Portal
+    </title>
+    <h1>
+      Yodlr Registration Portal
+    </h1>
     bound HTMLFormElement {
       "0": <input
         class="form-control"

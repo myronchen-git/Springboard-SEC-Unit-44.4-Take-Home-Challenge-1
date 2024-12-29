@@ -21,35 +21,41 @@ function AdminPage() {
 
   if (errorMessage) {
     return (
-      <div>
-        <h1>Error</h1>
-        <p>{errorMessage}</p>
-      </div>
+      <>
+        <title>Yodlr Admin Page</title>
+        <div>
+          <h1>Error</h1>
+          <p>{errorMessage}</p>
+        </div>
+      </>
     );
   } else {
     return (
-      <Table striped>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>State</th>
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.firstName}</td>
-              <td>{user.lastName}</td>
-              <td>{user.email}</td>
-              <td>{user.state}</td>
+      <>
+        <title>Yodlr Admin Page</title>
+        <Table striped>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>State</th>
             </tr>
-          ))}
-        </tbody>
-      </Table>
+          </thead>
+          <tbody>
+            {users.map((user) => (
+              <tr key={user.id}>
+                <td>{user.id}</td>
+                <td>{user.firstName}</td>
+                <td>{user.lastName}</td>
+                <td>{user.email}</td>
+                <td>{user.state}</td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+      </>
     );
   }
 }

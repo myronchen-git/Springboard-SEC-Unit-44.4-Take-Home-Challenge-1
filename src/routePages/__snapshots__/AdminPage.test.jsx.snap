@@ -2,6 +2,9 @@
 
 exports[`AdminPage > matches snapshot. 1`] = `
 <DocumentFragment>
+  <title>
+    Yodlr Admin Page
+  </title>
   <table
     class="table table-striped"
   >

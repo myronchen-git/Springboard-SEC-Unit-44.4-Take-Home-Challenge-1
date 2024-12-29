@@ -40,6 +40,8 @@ function SignupPage() {
 
   return (
     <main className="Signup">
+      <title>Yodlr Registration Portal</title>
+      <h1>Yodlr Registration Portal</h1>
       <Form className="Signup__form" onSubmit={handleSubmit}>
         <FormGroup>
           <Label htmlFor="Signup__input-first-name">First Name</Label>
