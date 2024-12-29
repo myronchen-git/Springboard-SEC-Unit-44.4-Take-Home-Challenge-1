@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HomePage > matches snapshot. 1`] = `
+<DocumentFragment>
+  <main>
+    <h1>
+      Yodlr Design Challenge
+    </h1>
+    <a
+      data-discover="true"
+      href="/signup"
+    >
+      Registration Page
+    </a>
+    <a
+      data-discover="true"
+      href="/admin"
+    >
+      Admin Page
+    </a>
+  </main>
+</DocumentFragment>
+`;
