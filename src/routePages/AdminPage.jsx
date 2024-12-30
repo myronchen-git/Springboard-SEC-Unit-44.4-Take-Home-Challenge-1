@@ -3,6 +3,8 @@ import { Table } from 'reactstrap';
 
 import { UserContext } from '../contexts';
 
+import './AdminPage.css';
+
 // ==================================================
 
 /**
@@ -21,18 +23,20 @@ function AdminPage() {
 
   if (errorMessage) {
     return (
-      <>
+      <main className="AdminPage">
         <title>Yodlr Admin Page</title>
+        <h1>Users</h1>
         <div>
           <h1>Error</h1>
           <p>{errorMessage}</p>
         </div>
-      </>
+      </main>
     );
   } else {
     return (
-      <>
+      <main className="AdminPage">
         <title>Yodlr Admin Page</title>
+        <h1>Users</h1>
         <Table striped>
           <thead>
             <tr>
@@ -55,7 +59,7 @@ function AdminPage() {
             ))}
           </tbody>
         </Table>
-      </>
+      </main>
     );
   }
 }

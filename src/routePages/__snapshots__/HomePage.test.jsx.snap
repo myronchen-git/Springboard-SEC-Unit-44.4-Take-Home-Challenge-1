@@ -2,22 +2,32 @@
 
 exports[`HomePage > matches snapshot. 1`] = `
 <DocumentFragment>
-  <main>
+  <main
+    class="HomePage"
+  >
     <h1>
       Yodlr Design Challenge
     </h1>
-    <a
-      data-discover="true"
-      href="/signup"
+    <button
+      class="btn btn-outline-primary"
     >
-      Registration Page
-    </a>
-    <a
-      data-discover="true"
-      href="/admin"
+      <a
+        data-discover="true"
+        href="/signup"
+      >
+        Registration Page
+      </a>
+    </button>
+    <button
+      class="btn btn-outline-primary"
     >
-      Admin Page
-    </a>
+      <a
+        data-discover="true"
+        href="/admin"
+      >
+        Admin Page
+      </a>
+    </button>
   </main>
 </DocumentFragment>
 `;

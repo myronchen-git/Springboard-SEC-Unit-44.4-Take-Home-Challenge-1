@@ -1,0 +1,14 @@
+.Signup {
+  background-color: white;
+
+  margin: 2em;
+  padding: 2em;
+
+  border-radius: 2em;
+  box-shadow: 0 0 0.75em grey;
+}
+
+.Signup__form {
+  display: flex;
+  flex-direction: column;
+}

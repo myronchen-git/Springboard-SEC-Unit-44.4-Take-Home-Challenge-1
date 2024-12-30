@@ -4,6 +4,8 @@ import { Alert, Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 import { UserContext } from '../contexts.jsx';
 
+import './SignupPage.css';
+
 // ==================================================
 
 /**
@@ -44,7 +46,9 @@ function SignupPage() {
       <h1>Yodlr Registration Portal</h1>
       <Form className="Signup__form" onSubmit={handleSubmit}>
         <FormGroup>
-          <Label htmlFor="Signup__input-first-name">First Name</Label>
+          <Label htmlFor="Signup__input-first-name">
+            <b>First Name</b>
+          </Label>
           <Input
             id="Signup__input-first-name"
             type="text"
@@ -55,7 +59,9 @@ function SignupPage() {
           ></Input>
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="Signup__input-last-name">Last Name</Label>
+          <Label htmlFor="Signup__input-last-name">
+            <b>Last Name</b>
+          </Label>
           <Input
             id="Signup__input-last-name"
             type="text"
@@ -66,7 +72,9 @@ function SignupPage() {
           ></Input>
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="Signup__input-email">Email</Label>
+          <Label htmlFor="Signup__input-email">
+            <b>Email</b>
+          </Label>
           <Input
             id="Signup__input-email"
             type="email"
@@ -76,7 +84,9 @@ function SignupPage() {
             onChange={handleChange}
           ></Input>
         </FormGroup>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" color="primary">
+          Submit
+        </Button>
         {errorMessage && <Alert color="danger">{errorMessage}</Alert>}
       </Form>
     </main>
