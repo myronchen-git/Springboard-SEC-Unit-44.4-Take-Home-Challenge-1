@@ -21,7 +21,7 @@ function App() {
    */
   const signup = useCallback(async (formData) => {
     const respData = await BackendApi.postUser(formData);
-    console.log('signup response:\n', respData);
+    console.debug('signup response:\n', respData);
     return respData;
   }, []);
 
@@ -32,7 +32,7 @@ function App() {
    */
   const getUsers = useCallback(async () => {
     const respData = await BackendApi.getUsers();
-    console.log('getUsers response:\n', respData);
+    console.debug('getUsers response:\n', respData);
     return respData;
   }, []);
 
